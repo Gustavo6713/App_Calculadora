@@ -40,7 +40,7 @@ class LoginActivity : AppCompatActivity() {
         if (user == "user@email.com" && pass == "123"){
             // Armazenar os dados do usuario no sharedPreferences
             val preferences = getSharedPreferences("biometria", Context.MODE_PRIVATE)
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, DashBoardActivity::class.java)
             startActivity(intent)
             finish()
         } else {
